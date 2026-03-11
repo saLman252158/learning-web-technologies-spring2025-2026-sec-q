@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> calculator </title>
+    </head>
+
+    <body>
+        <h2>calculator</h2>
+
+        <input type="text" ; id="screen">
+        <br><br>
+
+        <div id="btn"></div>
+
+      <script>
+
+                     var values = ["7","8","9","+",
+                        "4","5","6", "-",
+                        "1", "2", "3" ,"*",
+                        "0", ".","/","=" ];
+
+            var screen = document.getElementById("screen");
+            var btn = document.getElementById("btn");
+
+            for (var i = 0; i<values.length; i++)
+            {
+                var btn = document.createElement("btn");
+                btn.innerHTML = values[i];
+
+                btn.onclick = function(){
+                    var val = this.innerHTML;
+                    if(val == "=")
+                    {
+                        screen.value = eval(screen.value)
+                    }
+
+                    elseif( val == "C")
+                    {
+                        screen.value = " ";
+                    }
+                    elseif()
+                    {
+                        screen.value = screen.value + val;
+                    }
+
+
+                };
+
+                btn.appendChild(btn);
+                
+            }
+
+      </script>
+
+
+    </body>
+</html>
