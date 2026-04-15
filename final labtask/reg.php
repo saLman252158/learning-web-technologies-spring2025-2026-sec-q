@@ -21,7 +21,29 @@
     <div>
         <fieldset>
             <legend>Registraton</legend>
-            <input type ="text" value = "name">
+            <p>Name <input type ="text"> </p>
+            <p>email <input type ="email"> </p>
+            <p>userName <input type ="text"> </p>
+            <p>Password <input type ="password"> </p>
+            <p>confirmpassword <input type ="password"> </p>
+
+            <fieldset> 
+                <legend>Gender</legend>
+                <input type ="checkbox" name= "gender" > Male
+                <input type ="checkbox" name= "gender" > Female
+                <input type ="checkbox" name= "gender" > Other
+            </fieldset>
+
+            <fieldset> 
+                <legend>Date of birth</legend>
+                <input type ="text" name= "date" > /
+                <input type ="text" name= "month" > /
+                <input type ="text" name= "year" > (dd/mm/yyy)
+            </fieldset>
+            <br><br>
+
+            <input type = "submit"><input type = "reset">
+
         </fieldset>
     </div>
 
