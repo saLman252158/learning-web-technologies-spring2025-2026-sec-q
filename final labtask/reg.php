@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>xCompany</title>
+    <title>registration</title>
 </head>
 <body>
 
@@ -14,15 +14,18 @@
         <div class="nav">
             <a href="#">Home</a> |
             <a href="#">Login</a> |
-            <a href="reg.php">Registration</a>
+            <a href="#">Registration</a>
         </div>
     </div>
 
-    <div class="content">
-        <h2>Welcome to xCompany</h2>
+    <div>
+        <fieldset>
+            <legend>Registraton</legend>
+            <input type ="text" value = "name">
+        </fieldset>
     </div>
 
-    <div class="footer">
+    <div>
         Copyright © 2017
     </div>
 
