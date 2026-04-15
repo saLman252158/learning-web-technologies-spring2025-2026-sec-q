@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xCompany</title>
+</head>
+<body>
+
+<div>
+    
+    <div>
+        <h1> X-Company </h1>
+    
+        <div class="nav">
+            <a href="#">Home</a> |
+            <a href="#">Login</a> |
+            <a href="#">Registration</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to xCompany</h2>
+    </div>
+
+    <div class="footer">
+        Copyright © 2017
+    </div>
+
+</div>
+
+</body>
+</html>
