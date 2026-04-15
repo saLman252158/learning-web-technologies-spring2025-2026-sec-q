@@ -12,20 +12,20 @@
         <h1> X-Company </h1>
     
         <div class="nav">
-            <a href="#">Home</a> |
-            <a href="#">Login</a> |
-            <a href="#">Registration</a>
+            <a href="publichome.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="reg.php">Registration</a>
         </div>
     </div>
 
     <div>
         <fieldset>
             <legend>Registraton</legend>
-            <p>Name <input type ="text"> </p>
-            <p>email <input type ="email"> </p>
-            <p>userName <input type ="text"> </p>
-            <p>Password <input type ="password"> </p>
-            <p>confirmpassword <input type ="password"> </p>
+            <p>Name <input type ="text" class ="name"> </p>
+            <p>email <input type ="email" class ="email"> </p>
+            <p>userName <input type ="text" class ="username"> </p>
+            <p>Password <input type ="password" class ="password"> </p>
+            <p>confirmpassword <input type ="password" class ="password"> </p>
 
             <fieldset> 
                 <legend>Gender</legend>

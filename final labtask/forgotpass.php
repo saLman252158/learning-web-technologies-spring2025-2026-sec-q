@@ -13,18 +13,17 @@
     
         <div class="nav">
             <a href="#">Home</a> |
-            <a href="login.php">Login</a> |
+            <a href="#">Login</a> |
             <a href="reg.php">Registration</a>
         </div>
     </div>
 
-    <div class="content">
-        <h2>Welcome to xCompany</h2>
-    </div>
-
-    <div class="footer">
-        Copyright © 2017
-    </div>
+   <fieldset>
+    <legend>Forgot Password</legend>
+    Email <input type ="email">
+    <br>
+    <input type="submit">
+   </fieldset>
 
 </div>
 
