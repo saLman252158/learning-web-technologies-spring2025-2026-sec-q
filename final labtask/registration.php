@@ -5,22 +5,64 @@ session_start();
 <html lang="en">
 <head>
     <title>X Company - Registration</title>
+            <style>
+        body {
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+        .container1 {
+            padding: 20px 24px;
+            height: 400px;
+            width: 40%;
+            border: 1px solid black;
+        }
+
+         .container2 {
+            padding: 20px 24px;
+            height: 400px;
+            width: 60%;
+            border: 1px solid black;
+        }
+
+        .container3 {
+            padding: 20px 24px;
+            height: 400px;
+            width: 100%;
+            border: 1px solid black;
+            
+        }
+
+            .footer {
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
 
-<div>
+<div class="header">
+    <div>
         <h1> X-Company </h1>
-    
-        <div class="nav">
+    </div>
+        <div>
             <a href="publichome.php">Home</a> |
             <a href="login.php">Login</a> |
             <a href="registration.php">Registration</a>
         </div>
-    </div>
+</div>
 
-
-    <form method="POST">
+<div class="container3" style="justify-content: center; align-items: center; display: flex;">
+        
+    <form method="POST" style ="display: inline-block;">
         <fieldset>
             <legend>REGISTRATION</legend>
             <table>
@@ -50,8 +92,8 @@ session_start();
             <input type="reset" value="Reset">
         </fieldset>
     </form>
-
-      <div>
+</div>
+      <div class="footer">
         Copyright © 2017
     </div>
 
