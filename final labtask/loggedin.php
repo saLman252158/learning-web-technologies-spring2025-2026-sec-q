@@ -12,9 +12,9 @@
         <h1> X-Company </h1>
     
         <div class="nav">
-            <a href="#">Home</a> |
+            <a href="publichome.php">Home</a> |
             <a href="login.php">Login</a> |
-            <a href="reg.php">Registration</a>
+            <a href="registration.php">Registration</a>
         </div>
     </div>
 
