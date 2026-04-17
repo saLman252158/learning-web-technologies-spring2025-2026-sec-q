@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,9 +55,9 @@
         Copyright © 2017
     </div>
 
-    <?php
-session_start();
-if (isset($_POST['submit'])) {
+<?php
+    
+    if (isset($_POST['submit'])) {
     $user = $_POST['username'];
     $email = $_POST['email'];
     $pass = $_POST['password'];
@@ -62,11 +65,13 @@ if (isset($_POST['submit'])) {
     if ($pass !== $conf_pass) {
         die("Passwords do not match!");
     }
-    $_SESSION['user_id'] = $user;
+    $_SESSION['username'] = $user;
+    $_SESSION['email'] = $email;
+    $_SESSION['password'] = $pass;
     $_SESSION['status'] = "Registered";
 
   
-    header("Location: publichome.php");
+    header("Location: login.php");
     exit();
 }
 ?>
