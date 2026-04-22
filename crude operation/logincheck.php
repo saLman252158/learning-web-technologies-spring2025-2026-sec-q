@@ -5,11 +5,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     
-    if ($username === "$username" && $password === "$password") {
-        $_SESSION['username'] = $username;
+    if (isset($_SESSION['username']) && isset($_SESSION['password']) && $username === $_SESSION['username'] && $password === $_SESSION['password']) {
         header("Location: home.php");
         exit();
-    } else {
+    } 
+    elseif ($username === "admin" && $password === "admin") {
+        
+        header("Location: adminhome.php");
+        exit();
+    }
+    else {
         echo "Invalid username or password.";
     }
 }
